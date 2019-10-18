@@ -1,0 +1,63 @@
+
+
+.contener_mandat_1{
+    display: flex;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.contener_mandat_2{
+    font-family: 'Bookman Old Style';
+    font-size: 1.8em;
+    border-style: groove outset groove outset;
+    border-width: 15px;
+    border-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    width: 100%;
+    background: rgb(186, 186, 188);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 20px white;
+}
+.titre_mandat{
+    margin-left:150px;
+    font-size: 2em;
+    text-align: center
+}
+.image_colombe_mandat{
+    height: 200px;
+    width: 350px
+}
+
+@media only screen and  (max-width: 400px){
+
+    .contener_mandat_1 {
+        display: flex;
+        font-family: Raleway;
+        font-weight: bold;
+        margin-top: -20%;
+    }
+
+    .contener_mandat_2 {
+        font-size: 0.5em;
+        width: 100%;
+    }
+
+    .titre_mandat {
+        margin-left: 0px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+
+    .image_colombe_mandat {
+        height: 90px;
+        width: 150px;
+    }
+
+    .global_footer {
+        margin-top: -0%;
+    }
+
+    .contener_mandat_2 > p,h4{
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,90 @@
+.contener_image > image{
+    width: 339px;
+    height: 236px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 25%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    box-shadow: 2px 2px 40px white;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    /*background-color: #5cb85c;*/
+    background-image: linear-gradient(to left top, #c0392b, #c6345c, #b84488, #995aa9, #6d6ebb, #5180c9, #2e90cf, #009fd0, #00b6dd, #00cee7, #36e5ee, #5ffbf1);
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px 16px;
+    /*background-color: #5cb85c;*/
+    background-image: linear-gradient(to left top, #5ffbf1, #36e5ee, #00cee7, #00b6dd, #009fd0, #359ecd, #4c9ec9, #5c9dc5, #7fb2ce, #a2c7d8, #c7dce3, #ecf0f1);}
+
+@media only screen and  (max-width: 400px){
+    .modal-content {
+        font-size: 0.7em;
+        width: 100%;
+    }
+
+    .global_footer {
+        margin-top: -45%;
+    }
+}

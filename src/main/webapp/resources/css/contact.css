@@ -1,0 +1,14 @@
+.contener_contact_1{
+    font-size:1.5em;
+    color:white;
+    background:#1f1f1f;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap
+}
+
+.contener_contact_2,.contener_contact_3,.contener_contact_4{
+    margin-left: 25px; margin-right: 25px
+}
+

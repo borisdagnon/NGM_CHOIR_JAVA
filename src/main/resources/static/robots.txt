@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cart/
+sitemap: https://www.centregracefoi.com/sitemap.xml

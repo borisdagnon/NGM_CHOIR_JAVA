@@ -1,54 +1,58 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
 package com.graceetfoi.gf.Bean;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(
+        name = "louange"
+)
 public class Louange {
-
-
     @Id
-    @Column(name = "id")
+    @Column(
+            name = "id"
+    )
     private int idLouange;
-
-    @Column(name = "nom")
+    @Column(
+            name = "nom"
+    )
     private String nom;
+    @Column(
+            name = "lien"
+    )
+    private String lien;
+    @Column(
+            name = "id_tab"
+    )
+    private int table;
 
-    @Column(name = "nom_Fichier")
-    private String nomFichier;
-
-    @Column(name = "lyrics")
-    private String lyrics;
-
-    @Column(name = "id_tab")
-            private int table;
-
-    Louange(){}
-
-    public Louange(String nom,String nomFichier, String lyrics, int table){
-        this.lyrics=lyrics;
-        this.nom=nom;
-        this.nomFichier=nomFichier;
-        this.table=table;
+    Louange() {
     }
 
-    public String getLyrics() {
-        return lyrics;
+    public Louange(int idLouange, String nom, String lien, int table) {
+        this.idLouange = idLouange;
+        this.lien = lien;
+        this.nom = nom;
+        this.table = table;
     }
 
-    public void setLyrics(String lyrics) {
-        this.lyrics = lyrics;
+    public String getLien() {
+        return this.lien;
     }
 
-    public String getNomFichier() {
-        return nomFichier;
-    }
-
-    public void setNomFichier(String nomFichier) {
-        this.nomFichier = nomFichier;
+    public void setLien(String lien) {
+        this.lien = lien;
     }
 
     public String getNom() {
-        return nom;
+        return this.nom;
     }
 
     public void setNom(String nom) {
@@ -56,6 +60,10 @@ public class Louange {
     }
 
     public int getTable() {
-        return table;
+        return this.table;
+    }
+
+    public int getIdLouange() {
+        return this.idLouange;
     }
 }

@@ -1,58 +1,73 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
 package com.graceetfoi.gf.Bean;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(
+        name = "audio"
+)
 public class Audio {
-
-
     @Id
     @GeneratedValue
-    @Column(name = "id")
-    private int idAudio;
+    @Column(
+            name = "id"
+    )
+    private int id;
+    @Column(
+            name = "titre"
+    )
+    private String titre;
+    @Column(
+            name = "lien"
+    )
+    private String lien;
+    @Column(
+            name = "annee"
+    )
+    private String annee;
 
-    @Column(name = "nom")
-    private String nom;
 
-    @Column(name = "nom_Fichier")
-    private String nomFichier;
 
-    @Column(name = "id_tab")
-    private int table;
-
-    public Audio(){}
-
-    public Audio(String nom,String nomFichier, int table){
-        this.nom=nom;
-        this.nomFichier =nomFichier;
-        this.table=table;
+    public Audio() {
     }
 
-    public int getId() {
-        return idAudio;
+    public Audio(String titre, String lien, String annee) {
+        this.titre = titre;
+        this.lien = lien;
+        this.annee = annee;
     }
 
-    public String getNom() {
-        return nom;
+    public int getIdAudio() {
+        return this.id;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public String getTitre() {
+        return this.titre;
     }
 
-    public String getNomFichier() {
-        return nomFichier;
+    public void setTitre(String titre) {
+        this.titre = titre;
     }
 
-    public void setNomFichier(String nomFichier) {
-        this.nomFichier = nomFichier;
+    public String getLien() {
+        return this.lien;
     }
 
-    public int getTable() {
-        return table;
+    public void setLien(String lien) {
+        this.lien = lien;
+    }
+
+    public String getAnnee() {
+        return this.annee;
+    }
+
+    public void setAnnee(String annee) {
+        this.annee = annee;
     }
 
 }

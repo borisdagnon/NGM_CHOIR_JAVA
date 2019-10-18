@@ -1,0 +1,363 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.contener_media_siloe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top:20px;
+    width: 100%;
+    height: auto;
+    border-width:5px;
+    border-style:solid ;
+    border-color: #eeeeee;
+    background: rgba(246, 246, 246, 0.7);
+
+}
+
+.contener_media_siloe_carousel{
+
+    display: flex;
+    height: auto;
+    margin-top: 1px;
+    width: 100%;
+    /*background: rgb(186, 186, 188);
+    background: rgba(246, 246, 246, 0.7);*/
+}
+
+.contener_media_siloe_overflow{
+    width: 333px;
+    height: 717px;
+    padding: 1rem;
+    margin-top: -15px;
+}
+.contener_media_video_audio{
+    display: flex;
+    flex-flow: row wrap;
+    height: 730px;
+    width: 500px;
+    background: rgb(186, 186, 188);
+    background: rgba(246, 246, 246, 0.7);
+}
+
+.contener_media_videoaudio_et_overflow{
+    display: flex;
+    margin-top: 20px;
+}
+.video_audio{
+    width: 640px;
+    height: 350px;
+
+    margin-top: 25px;
+    margin-left: 5px;
+    background: rgb(188, 118, 0);
+    background: rgba(0, 123, 175, 0.7);
+}
+.contener_media_video_audio_titre{
+    width: 640px;
+    height: 150px;
+    background: rgb(186, 186, 188);
+    background: rgba(246, 246, 246, 0.7);
+    margin-top: 100px;
+    margin-left: 5px;
+}
+.contener_media_siloe_contener_tab{
+    word-wrap: break-word;
+    height: 724px;
+    background: rgb(186, 186, 188);
+    background: rgba(246, 246, 246, 0.7);
+}
+.contener_media_media{
+    width: 288px;
+    margin-left: -17px;
+}
+.cadre_photos{
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+    margin-left: -10px;
+}
+.cadre_infos{
+
+    margin-left: 75px;
+    margin-top: -80px;
+    width: 150px;
+    height: 80px;
+    font-size: 12px;
+}
+.cadre_icone_film{
+    margin-top: -80px;
+    margin-left: 240px;
+    float: left
+}
+
+.cadre_icone_audio{
+    margin-top: -40px;
+    margin-left: 240px;
+    float: left
+}
+.contener_media_siloe_media{
+
+
+}
+.titre_video{
+    font-weight: bold;
+    margin-bottom: -1px;
+    width: 150px;
+    float: left;
+
+}
+.date_video{
+    width: 150px;
+    float: left;
+
+}
+.orateur{
+    margin-bottom: -1px;
+    width: 150px;
+    float: left;
+
+}
+.icon_chevron{
+    width: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+
+
+.contener_video_youtube{
+    margin-top: 25px;
+    margin-left: 8px;
+    width: 490px;
+    height: auto;
+}
+.embedresize {
+    max-width: 100%;
+    margin: auto;
+}
+
+.embedresize div {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.embedresize iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro #intro .embedresize iframe,
+.exit .quizz .embedresize iframe,
+.alreadyplayed #intro .embedresize iframe,
+.identityset #intro .embedresize iframe,
+#notabene .embedresize iframe,
+#message_intro .embedresize iframe,
+.fancybox_body .embedresize iframe,
+#comments .embedresize iframe,
+#description .embedresize iframe,
+.alreadyplayed .embedresize iframe,
+#adserver .embedresize iframe {
+    max-width: none !important;
+}
+
+#content{
+    width: auto;
+    height: 623px;
+    overflow: scroll;
+    background: rgba(246, 246, 246, 0.7);
+}
+
+#tabs #current a, #tabs #current a::after {
+
+    background-image: linear-gradient(to right top, #feef00, #febc00, #f28b00, #dc5a1a, #bd2826);    color: white;
+}
+
+.contener_audio_soundcloud{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    margin-top: 15%;
+}
+
+
+@media only screen and  (max-width: 400px){
+
+    .contener_2 {
+
+        margin-top: 0;
+
+    }
+
+    .panel{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        background: none;
+      width: 100%;
+        margin-left: -44px;
+    }
+    .contener_media_video_audio {
+
+        height: 730px;
+        width: 250px;
+        margin-left: 15px;
+    }
+
+    .contener_infos_et_icones{
+        margin-left: 5px;
+        margin-top: -15px;
+
+    }
+
+    .cadre_infos {
+        margin-left: 50px;
+        width: 50%;
+        height: auto;
+        font-size: 3px;
+
+    }
+    .cadre_icone_audio {
+        margin-left: 0;
+        float: none;
+    }
+
+
+
+    .contener_video_youtube {
+        margin-top: 25px;
+        margin-left: 8px;
+        width: 150px;
+        height: auto;
+    }
+
+
+    .contener_media_video_audio_titre {
+        width: 640px;
+        height: 80px;
+        background: rgb(186, 186, 188);
+        background: rgba(246, 246, 246, 0.7);
+        margin-top: -250px;
+        margin-left: 5px;
+    }
+    .contener_media_siloe_overflow {
+        width: 90px;
+        height: 717px;
+        padding: 1rem;
+        margin-top: -15px;
+        font-size: 0.5em;
+        margin-left: -10px;
+    }
+
+    #content{
+        font-size: 0.3em;
+    }
+
+    .contener_media_media {
+
+        width: 100%;
+        margin-left: -17px;
+
+    }
+
+
+    .contener_audio_soundcloud {
+        height: 35%;
+        width: 100%;
+    }
+
+    #tab1,#tab2,#tab3{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .accordion {
+
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 5px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        font-size: 4px;
+
+    }
+
+    .icon_chevron {
+
+        width: 15px;
+        float: none;
+        margin-left: 70px;
+        margin-top: -7px;
+
+    }
+
+    .cadre_photos {
+
+        margin-top: 9px;
+        width: 20px;
+        height: 10px;
+        margin-left: 47px;
+
+    }
+
+    .cadre_infos {
+
+        margin-left: 0;
+        width: 5px;
+        height: auto;
+        font-size: 3px;
+        margin-top: 20px;
+
+    }
+.cadre_icone_film {
+    float: left;
+    margin-left: 41px;
+    margin-top: -22px;
+}
+
+    .cadre_icone_audio {
+
+        float: left;
+        margin-left: 41px;
+        margin-top: -12px;
+    }
+}
+
+

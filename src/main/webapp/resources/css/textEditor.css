@@ -1,0 +1,17 @@
+.contener_global_textEditor{
+text-align: center;
+    background: rgb(186, 186, 188);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.contener_global_buttons{
+    margin-left: 0;
+}
+
+input{
+    content: "";
+
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    border: 1px solid blue;
+    z-index: -1;
+}

@@ -1,0 +1,5 @@
+@media only screen and  (max-width: 400px){
+    #tab1,#tab2,#tab3{
+        width: 330px;
+    }
+}

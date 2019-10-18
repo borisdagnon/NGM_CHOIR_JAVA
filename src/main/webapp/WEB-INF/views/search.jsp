@@ -70,35 +70,16 @@
 
                         <h2 class="ui header">${fn:length(SearchVideos)} r&eacute;sultats...</h2>
 
+                    <ul id="svList">
+                        <div class="ui center aligned container">
                         <c:forEach items="${SearchVideos}" var="v" varStatus="index">
 
 
-                            <div class="column" id="videos_<c:out value="${index.index}"/>" name="<c:out value="${v.annee}"/>">
-                                <div class="wrapper">
-                                    <div class="youtube"  data-embed="<c:out value="${v.lien}"/>">
-
-                                        <!-- (2) the "play" button -->
-                                        <div class="play-button"></div>
-
-                                    </div>
-
-                                    <div class="ui message">
-                                        <div ></div>
-                                        <div class="header">
-                                            <c:out value="${v.titre}"/>
-                                        </div>
-
-                                        <p><i class="calendar alternate outline icon"></i><c:out value="${v.format}"/></p>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
+                            <li class="svThumb ytVideo" style="width: 450px; height: 280px" data-videoID="<c:out value="${v.lien}"/>"><c:out value="${v.titre}"/></li>
 
                         </c:forEach>
-
-
+                        </div>
+                    </ul>
                     </c:when>
 
                     <c:otherwise>
@@ -170,6 +151,7 @@
 </div>
 
 <%@include file="footer.jsp"%>
+<script src="${pageContext.request.contextPath}/resources/js/speedvault.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/audioplayer.js"></script>
 <script>
     $( function()

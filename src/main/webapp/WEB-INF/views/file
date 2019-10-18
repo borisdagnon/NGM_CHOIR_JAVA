@@ -1,0 +1,32 @@
+Se rappeler de créer une table pour stocker les évènements de l'assemblée
+
+<div class=" row" style="background-color: #E07271">
+
+            <div class="four wide column">
+                <h2 class="ui header">Jeune et Pri&egrave;re </h2>
+<p>du 17-02-2018 au 30-03-2018</p>
+            </div>
+
+            <div class="eight wide column">
+
+                <div class="ui message">
+
+                    <div class="center aligned header">
+                            &Eacute;z&eacute;chiel 47:
+                    </div>
+                    <p>Il me ramena vers la porte de la maison. Et voici, de l'eau sortait sous le seuil de la maison,<br/>
+                        &agrave; l'orient, car la face de la maison &eacute;tait &agrave; l'orient; l'eau descendait sous le c&ocirc;t&eacute; droit de la maison, au midi de l'autel.
+                        2 Il me conduisit par le chemin de la porte septentrionale,<br/>
+                        et il me fit faire le tour par dehors jusqu'&agrave; l'ext&eacute;rieur de la porte orientale. Et voici, l'eau coulait du c&ocirc;t&eacute; droit...</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+         <li class="nav-item <c:out value="${actL}"/>">
+                                    <a class="nav-link" href="/reccueil_chants">Reccueil de Chants</a>
+                                </li>

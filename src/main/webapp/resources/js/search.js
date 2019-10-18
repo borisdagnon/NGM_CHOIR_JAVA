@@ -22,6 +22,8 @@ var filterDataRequest = $.ajax({
 filterDataRequest.done(function (data) {
     elements=[];
 var tmp=null;
+
+
     $(data.listeRechercheVideo).each(function (index, value) {
 
        tmp=check(value['table']);
@@ -61,9 +63,7 @@ var tmp=null;
 
     $('.ui.search')
         .search({
-            apiSettings: {
-                url: 'search/?q={query}'
-            },
+
             type:'category',
             source:elements,
             minCharacters : 2
